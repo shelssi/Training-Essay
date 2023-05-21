@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\title{Training Essay}
+\author{Jie LIU, Yuting DONG, Yetian DING}
+
+\begin{document}
+
+\maketitle
+
+\section*{Abstract}
+\begin{abstract}
+The paper titled "Quickly Starting Media Streams Using QUIC" investigates the performance of QUIC (Quick UDP Internet Connections) compared to TCP (Transmission Control Protocol) for HTTP adaptive streaming applications. The study focuses on measuring QUIC's streaming performance on wireless and cellular networks, specifically during network interface changes due to viewer mobility and under unstable network conditions.
+The study found that QUIC starts media streams more quickly, leading to reduced initial startup and seeking latency. It also demonstrated better performance than TCP in scenarios involving viewer mobility and network changes. The results indicated that QUIC outperforms TCP when there is network congestion and provides improved streaming QoE.
+\end{abstract}
+
+\section{Introduction}
+The introduction section of the research paper provides an overview of the research topic and establishes the context and significance of the study. It should include a clear statement of the research problem or question being addressed, a review of relevant literature, and an explanation of the research objectives and methodology.
+
+The introduction should engage the reader and provide enough background information to understand the purpose and importance of the research. It should also highlight any gaps or limitations in previous studies and explain how the current research aims to fill those gaps.
+
+\subsection{Research Objectives}
+Clearly state the specific research objectives or research questions that the study aims to address. These objectives should be directly related to the research problem identified in the introduction.
+
+\subsection{Research Methodology}
+Describe the research methodology or approach that was used to conduct the study. This includes details about the data collection methods, data analysis techniques, and any tools or instruments used.
+
+\subsection{Organization of the Paper}
+Briefly outline the structure of the rest of the paper. Provide a summary of the main sections or chapters and describe what each section will cover.
+
+% \section{Literature Review}
+% After the introduction, it is common to include a literature review section that provides a comprehensive overview of previous research and scholarly works relevant to the research topic. This section helps to establish the theoretical framework and build a strong foundation for the current study.
+
+\section{Summary}
+In this paper, we evaluated the performance of HTTP Adaptive Streaming (HAS) over QUIC in uncontrolled wireless network environments. We focused on measuring standard Quality of Experience (QoE) metrics, such as average wait time after frame seeking and rebuffer rates, for three different bitrate adaptation algorithms: BASIC, SARA, and BBA-2. Our objective was to determine whether QUIC could provide better QoE compared to TCP.
+
+\subsection{Results}
+The results of our experiments showed that QUIC achieved a shorter average wait time after seeking, leading to a quicker start of media streams compared to TCP. QUIC also demonstrated substantially lower rebuffer rates, indicating improved stream stability. These findings contrasted with earlier studies that reported conflicting results, which we attributed to the use of different server implementations. We also observed that QUIC's benefits were more prominent in networks with higher delay and loss, making it particularly advantageous in regions with early generation 3G networks.
+
+Furthermore, we investigated QUIC's performance in connection-switch scenarios, simulating situations where viewers switch between WiFi and cellular networks. QUIC outperformed TCP by reducing rebuffer rates and providing higher average playback bitrates for all bitrate adaptation algorithms tested. We highlighted the potential of using unique Connection Identifiers (CIDs) in QUIC to facilitate fast switching upon network/IP changes.
+\section{discussion}
+
+\section{Conclusion}
+In the conclusion section, summarize the key points discussed in the introduction and literature review. Emphasize the importance of the research and its potential implications. Briefly outline the main contributions of the study and suggest avenues for future research.
+
+\end{document}
